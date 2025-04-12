@@ -1,0 +1,5 @@
+# Ignorar carpetas de Visual Studio
+.vs/
+
+# Ignorar archivos de contenido
+*.vsix
