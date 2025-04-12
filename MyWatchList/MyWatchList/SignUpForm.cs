@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace MyWatchList
 {
-    public partial class Form1 : Form
+    public partial class SignInForm : Form
     {
-        public Form1()
+        public SignInForm()
         {
             InitializeComponent();
+            Recolocar();
+        }
+
+        private void Recolocar()
+        {
+            
+        }
+
+        private void SignInForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
