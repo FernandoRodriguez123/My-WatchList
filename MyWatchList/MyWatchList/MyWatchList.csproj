@@ -88,11 +88,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\Images\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\Icons\MyWatchListIcon.png" />
+    <Content Include="Resources\Icons\MyWatchList.ico" />
+    <Content Include="Resources\Images\MyWatchList.png" />
+    <Content Include="Resources\Images\MyWatchListTransparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

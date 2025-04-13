@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +38,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\Program.cs",
+              "RelativeDocumentMoniker": "MyWatchList\\Program.cs",
+              "ToolTip": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\Program.cs",
+              "RelativeToolTip": "MyWatchList\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T15:52:05.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FilmLibraryForm.cs",
               "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\FilmLibraryForm.cs",
               "RelativeDocumentMoniker": "MyWatchList\\FilmLibraryForm.cs",
               "ToolTip": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\FilmLibraryForm.cs",
               "RelativeToolTip": "MyWatchList\\FilmLibraryForm.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAawBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAApwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T14:37:11.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FilmLibraryForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\FilmLibraryForm.cs",
               "RelativeDocumentMoniker": "MyWatchList\\FilmLibraryForm.cs",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SignUpForm.cs",
               "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\SignUpForm.cs",
               "RelativeDocumentMoniker": "MyWatchList\\SignUpForm.cs",
@@ -72,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "SignUpForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\SignUpForm.cs",
               "RelativeDocumentMoniker": "MyWatchList\\SignUpForm.cs",
