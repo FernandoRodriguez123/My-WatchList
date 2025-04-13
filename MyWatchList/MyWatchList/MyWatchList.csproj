@@ -91,6 +91,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\Icons\MyWatchList.ico" />
+    <Content Include="Resources\Images\imagenPrueba.jpg" />
     <Content Include="Resources\Images\MyWatchList.png" />
     <Content Include="Resources\Images\MyWatchListTransparent.png" />
   </ItemGroup>

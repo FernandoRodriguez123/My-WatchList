@@ -12,6 +12,7 @@ namespace MyWatchList
 {
     //TODO en feature de funcionalidad meter para ver contraseña o no mediante icono
     //TODO en feature de funcionalidad meter recolocar para adapterse a distintos tamaños
+    //TODO meter imagenes e iconos comunes a resources del visual
     public partial class SignInForm : Form
     {
         public SignInForm()
