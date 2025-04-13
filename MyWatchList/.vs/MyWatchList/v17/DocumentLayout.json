@@ -7,7 +7,15 @@
       "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,12 +35,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FilmLibraryForm.cs",
+              "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\FilmLibraryForm.cs",
+              "RelativeDocumentMoniker": "MyWatchList\\FilmLibraryForm.cs",
+              "ToolTip": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\FilmLibraryForm.cs",
+              "RelativeToolTip": "MyWatchList\\FilmLibraryForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAawBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T14:37:11.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FilmLibraryForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\FilmLibraryForm.cs",
+              "RelativeDocumentMoniker": "MyWatchList\\FilmLibraryForm.cs",
+              "ToolTip": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\FilmLibraryForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MyWatchList\\FilmLibraryForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T14:35:54.725Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SignUpForm.cs",
               "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\SignUpForm.cs",
               "RelativeDocumentMoniker": "MyWatchList\\SignUpForm.cs",
               "ToolTip": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\SignUpForm.cs",
               "RelativeToolTip": "MyWatchList\\SignUpForm.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAA0AAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T08:51:50.068Z",
               "EditorCaption": ""

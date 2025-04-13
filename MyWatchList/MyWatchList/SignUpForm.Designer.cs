@@ -66,7 +66,7 @@
             this.userNameTxb.Location = new System.Drawing.Point(62, 130);
             this.userNameTxb.Name = "userNameTxb";
             this.userNameTxb.Size = new System.Drawing.Size(251, 15);
-            this.userNameTxb.TabIndex = 4;
+            this.userNameTxb.TabIndex = 2;
             // 
             // changeSigningLbl
             // 
@@ -76,7 +76,7 @@
             this.changeSigningLbl.Location = new System.Drawing.Point(59, 301);
             this.changeSigningLbl.Name = "changeSigningLbl";
             this.changeSigningLbl.Size = new System.Drawing.Size(158, 21);
-            this.changeSigningLbl.TabIndex = 6;
+            this.changeSigningLbl.TabIndex = 8;
             this.changeSigningLbl.Text = "¿Todavía no tienes cuenta?";
             // 
             // userNamePanel
@@ -85,7 +85,7 @@
             this.userNamePanel.Location = new System.Drawing.Point(63, 151);
             this.userNamePanel.Name = "userNamePanel";
             this.userNamePanel.Size = new System.Drawing.Size(250, 2);
-            this.userNamePanel.TabIndex = 8;
+            this.userNamePanel.TabIndex = 3;
             // 
             // passwordPanel
             // 
@@ -93,7 +93,7 @@
             this.passwordPanel.Location = new System.Drawing.Point(62, 232);
             this.passwordPanel.Name = "passwordPanel";
             this.passwordPanel.Size = new System.Drawing.Size(250, 2);
-            this.passwordPanel.TabIndex = 11;
+            this.passwordPanel.TabIndex = 6;
             // 
             // passwordtxb
             // 
@@ -101,7 +101,7 @@
             this.passwordtxb.Location = new System.Drawing.Point(61, 211);
             this.passwordtxb.Name = "passwordtxb";
             this.passwordtxb.Size = new System.Drawing.Size(251, 15);
-            this.passwordtxb.TabIndex = 10;
+            this.passwordtxb.TabIndex = 5;
             this.passwordtxb.UseSystemPasswordChar = true;
             // 
             // passwordLbl
@@ -111,7 +111,7 @@
             this.passwordLbl.Location = new System.Drawing.Point(58, 182);
             this.passwordLbl.Name = "passwordLbl";
             this.passwordLbl.Size = new System.Drawing.Size(73, 21);
-            this.passwordLbl.TabIndex = 9;
+            this.passwordLbl.TabIndex = 4;
             this.passwordLbl.Text = "Contraseña";
             // 
             // submitBtn
@@ -122,7 +122,7 @@
             this.submitBtn.Location = new System.Drawing.Point(63, 258);
             this.submitBtn.Name = "submitBtn";
             this.submitBtn.Size = new System.Drawing.Size(249, 40);
-            this.submitBtn.TabIndex = 13;
+            this.submitBtn.TabIndex = 7;
             this.submitBtn.Text = "Entrar";
             this.submitBtn.UseVisualStyleBackColor = false;
             // 

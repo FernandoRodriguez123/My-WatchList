@@ -10,16 +10,14 @@ using System.Windows.Forms;
 
 namespace MyWatchList
 {
-    //TODO en feature de funcionalidad meter para ver contraseña o no mediante icono
-    //TODO en feature de funcionalidad meter recolocar para adapterse a distintos tamaños
-    public partial class SignInForm : Form
+    public partial class FilmLibraryForm : Form
     {
-        public SignInForm()
+        public FilmLibraryForm()
         {
             InitializeComponent();
         }
 
-        private void SignInForm_Load(object sender, EventArgs e)
+        private void FilmLibraryForm_Load(object sender, EventArgs e)
         {
 
         }

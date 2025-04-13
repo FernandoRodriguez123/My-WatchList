@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilmLibraryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmLibraryForm.Designer.cs">
+      <DependentUpon>FilmLibraryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FilmLibraryForm.resx">
+      <DependentUpon>FilmLibraryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,7 +92,7 @@
     <Folder Include="Resources\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Icons\MiWatchListIcon.ico" />
+    <Content Include="Resources\Icons\MyWatchListIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
