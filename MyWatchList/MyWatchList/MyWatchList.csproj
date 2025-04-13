@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -90,6 +91,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Resources\Icons\chevronDown.png" />
+    <Content Include="Resources\Icons\chevronUp.png" />
     <Content Include="Resources\Icons\MyWatchList.ico" />
     <Content Include="Resources\Images\imagenPrueba.jpg" />
     <Content Include="Resources\Images\MyWatchList.png" />

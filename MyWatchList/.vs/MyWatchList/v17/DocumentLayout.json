@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\filmlibraryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|c:\\users\\ferro\\desktop\\mywatchlist\\mywatchlist\\mywatchlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FD2E317-0571-4C06-9C18-467437783BAF}|MyWatchList\\MyWatchList.csproj|solutionrelative:mywatchlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\Program.cs",
               "RelativeDocumentMoniker": "MyWatchList\\Program.cs",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FilmLibraryForm.cs",
               "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\FilmLibraryForm.cs",
               "RelativeDocumentMoniker": "MyWatchList\\FilmLibraryForm.cs",
               "ToolTip": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\FilmLibraryForm.cs*",
               "RelativeToolTip": "MyWatchList\\FilmLibraryForm.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAApwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T14:37:11.56Z",
               "EditorCaption": ""
@@ -76,20 +76,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "SignUpForm.cs",
               "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\SignUpForm.cs",
               "RelativeDocumentMoniker": "MyWatchList\\SignUpForm.cs",
               "ToolTip": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\SignUpForm.cs",
               "RelativeToolTip": "MyWatchList\\SignUpForm.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAA0AAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T08:51:50.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "SignUpForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ferro\\Desktop\\MyWatchList\\MyWatchList\\MyWatchList\\SignUpForm.cs",
               "RelativeDocumentMoniker": "MyWatchList\\SignUpForm.cs",

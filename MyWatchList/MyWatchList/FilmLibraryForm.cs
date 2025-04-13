@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace MyWatchList
 {
+    //TODO falta terminar los paneles de los filtros y añadir orden
     public partial class FilmLibraryForm : Form
     {
         public FilmLibraryForm()
