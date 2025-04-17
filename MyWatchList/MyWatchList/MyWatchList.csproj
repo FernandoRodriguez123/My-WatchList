@@ -52,6 +52,12 @@
     <Compile Include="FilmLibraryForm.Designer.cs">
       <DependentUpon>FilmLibraryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SeeFilmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeFilmForm.Designer.cs">
+      <DependentUpon>SeeFilmForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FilmLibraryForm.resx">
       <DependentUpon>FilmLibraryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeFilmForm.resx">
+      <DependentUpon>SeeFilmForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
@@ -93,6 +102,13 @@
   <ItemGroup>
     <Content Include="Resources\Icons\chevronDown.png" />
     <Content Include="Resources\Icons\chevronUp.png" />
+    <None Include="Resources\Icons\filledStar.png" />
+    <None Include="Resources\Icons\halfStar.png" />
+    <None Include="Resources\Icons\emptyStar.png" />
+    <None Include="Resources\Icons\emptyRedHeart.png" />
+    <None Include="Resources\Icons\filledRedHeart.png" />
+    <None Include="Resources\Icons\filledBlackHeart.png" />
+    <None Include="Resources\Icons\emptyBlackHeart.png" />
     <Content Include="Resources\Icons\MyWatchList.ico" />
     <Content Include="Resources\Images\imagenPrueba.jpg" />
     <Content Include="Resources\Images\MyWatchList.png" />

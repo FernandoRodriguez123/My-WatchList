@@ -9,3 +9,4 @@ C:\Users\ferro\Desktop\MyWatchList\MyWatchList\MyWatchList\obj\Debug\MyWatchList
 C:\Users\ferro\Desktop\MyWatchList\MyWatchList\MyWatchList\obj\Debug\MyWatchList.exe
 C:\Users\ferro\Desktop\MyWatchList\MyWatchList\MyWatchList\obj\Debug\MyWatchList.pdb
 C:\Users\ferro\Desktop\MyWatchList\MyWatchList\MyWatchList\obj\Debug\MyWatchList.FilmLibraryForm.resources
+C:\Users\ferro\Desktop\MyWatchList\MyWatchList\MyWatchList\obj\Debug\MyWatchList.SeeFilmForm.resources
