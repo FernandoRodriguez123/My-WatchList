@@ -1,5 +1,15 @@
 ## Avances de MyWatchList
 
+### Fechas: 15/04/2025 - 21/04/2025
+
+Durante este periodo, he avanzado en el apartado visual del proyecto en la rama feature/apartadoVisual. A continuación, se detallan los avances realizados:
+
+- **Pantalla de una serie**: Se ha diseñado la tercera pantalla que permite a los usuarios ver la información de una serie en detalle.
+
+### Próximos Pasos
+
+Debido al retraso y no haber terminado la última pantalla, durante esta siguiente semana además de aprender a usar Entity Framework, tendré que terminar la última pantalla para no retrasarla más.
+
 ### Fechas: 08/04/2025 - 14/04/2025
 
 Durante este periodo, he avanzado en el apartado visual del proyecto. A continuación, se detallan los avances realizados:
