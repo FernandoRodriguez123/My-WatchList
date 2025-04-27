@@ -31,8 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeeFilmForm));
             this.navbarPanel = new System.Windows.Forms.Panel();
             this.searchTxb = new System.Windows.Forms.TextBox();
+            this.searchPbx = new System.Windows.Forms.PictureBox();
             this.searchPanel = new System.Windows.Forms.Panel();
             this.addLbl = new System.Windows.Forms.Label();
+            this.brandPbx = new System.Windows.Forms.PictureBox();
             this.libraryLbl = new System.Windows.Forms.Label();
             this.titleLbl = new System.Windows.Forms.Label();
             this.GenresPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -45,10 +47,12 @@
             this.star3Pbx = new System.Windows.Forms.PictureBox();
             this.star1Pbx = new System.Windows.Forms.PictureBox();
             this.imagePbx = new System.Windows.Forms.PictureBox();
-            this.searchPbx = new System.Windows.Forms.PictureBox();
-            this.brandPbx = new System.Windows.Forms.PictureBox();
             this.statusBtn = new System.Windows.Forms.Button();
+            this.editBtn = new System.Windows.Forms.Button();
+            this.removeBtn = new System.Windows.Forms.Button();
             this.navbarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchPbx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brandPbx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heartPbx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star4Pbx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star5Pbx)).BeginInit();
@@ -56,8 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.star3Pbx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star1Pbx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagePbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchPbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brandPbx)).BeginInit();
             this.SuspendLayout();
             // 
             // navbarPanel
@@ -87,6 +89,16 @@
             this.searchTxb.TabIndex = 5;
             this.searchTxb.Text = "Buscar...";
             // 
+            // searchPbx
+            // 
+            this.searchPbx.Image = ((System.Drawing.Image)(resources.GetObject("searchPbx.Image")));
+            this.searchPbx.Location = new System.Drawing.Point(856, 14);
+            this.searchPbx.Name = "searchPbx";
+            this.searchPbx.Size = new System.Drawing.Size(24, 24);
+            this.searchPbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.searchPbx.TabIndex = 4;
+            this.searchPbx.TabStop = false;
+            // 
             // searchPanel
             // 
             this.searchPanel.BackColor = System.Drawing.Color.White;
@@ -105,6 +117,16 @@
             this.addLbl.Size = new System.Drawing.Size(66, 28);
             this.addLbl.TabIndex = 2;
             this.addLbl.Text = "AÑADIR";
+            // 
+            // brandPbx
+            // 
+            this.brandPbx.Image = ((System.Drawing.Image)(resources.GetObject("brandPbx.Image")));
+            this.brandPbx.Location = new System.Drawing.Point(44, 4);
+            this.brandPbx.Name = "brandPbx";
+            this.brandPbx.Size = new System.Drawing.Size(100, 50);
+            this.brandPbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.brandPbx.TabIndex = 1;
+            this.brandPbx.TabStop = false;
             // 
             // libraryLbl
             // 
@@ -229,26 +251,6 @@
             this.imagePbx.TabIndex = 2;
             this.imagePbx.TabStop = false;
             // 
-            // searchPbx
-            // 
-            this.searchPbx.Image = ((System.Drawing.Image)(resources.GetObject("searchPbx.Image")));
-            this.searchPbx.Location = new System.Drawing.Point(856, 14);
-            this.searchPbx.Name = "searchPbx";
-            this.searchPbx.Size = new System.Drawing.Size(24, 24);
-            this.searchPbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.searchPbx.TabIndex = 4;
-            this.searchPbx.TabStop = false;
-            // 
-            // brandPbx
-            // 
-            this.brandPbx.Image = ((System.Drawing.Image)(resources.GetObject("brandPbx.Image")));
-            this.brandPbx.Location = new System.Drawing.Point(44, 4);
-            this.brandPbx.Name = "brandPbx";
-            this.brandPbx.Size = new System.Drawing.Size(100, 50);
-            this.brandPbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.brandPbx.TabIndex = 1;
-            this.brandPbx.TabStop = false;
-            // 
             // statusBtn
             // 
             this.statusBtn.BackColor = System.Drawing.Color.Red;
@@ -261,12 +263,38 @@
             this.statusBtn.Text = "TERMINADA";
             this.statusBtn.UseVisualStyleBackColor = false;
             // 
+            // editBtn
+            // 
+            this.editBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.editBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editBtn.ForeColor = System.Drawing.Color.White;
+            this.editBtn.Location = new System.Drawing.Point(13, 473);
+            this.editBtn.Name = "editBtn";
+            this.editBtn.Size = new System.Drawing.Size(124, 42);
+            this.editBtn.TabIndex = 15;
+            this.editBtn.Text = "Editar";
+            this.editBtn.UseVisualStyleBackColor = false;
+            // 
+            // removeBtn
+            // 
+            this.removeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.removeBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeBtn.ForeColor = System.Drawing.Color.White;
+            this.removeBtn.Location = new System.Drawing.Point(150, 473);
+            this.removeBtn.Name = "removeBtn";
+            this.removeBtn.Size = new System.Drawing.Size(124, 42);
+            this.removeBtn.TabIndex = 16;
+            this.removeBtn.Text = "Eliminar";
+            this.removeBtn.UseVisualStyleBackColor = false;
+            // 
             // SeeFilmForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1422, 763);
+            this.Controls.Add(this.removeBtn);
+            this.Controls.Add(this.editBtn);
             this.Controls.Add(this.statusBtn);
             this.Controls.Add(this.heartPbx);
             this.Controls.Add(this.star4Pbx);
@@ -280,10 +308,13 @@
             this.Controls.Add(this.titleLbl);
             this.Controls.Add(this.imagePbx);
             this.Controls.Add(this.navbarPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SeeFilmForm";
-            this.Text = "SeeFilmForm";
+            this.Text = "MyWatchList";
             this.navbarPanel.ResumeLayout(false);
             this.navbarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchPbx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brandPbx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.heartPbx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.star4Pbx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.star5Pbx)).EndInit();
@@ -291,8 +322,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.star3Pbx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.star1Pbx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagePbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchPbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brandPbx)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,5 +348,7 @@
         private System.Windows.Forms.PictureBox star4Pbx;
         private System.Windows.Forms.PictureBox heartPbx;
         private System.Windows.Forms.Button statusBtn;
+        private System.Windows.Forms.Button editBtn;
+        private System.Windows.Forms.Button removeBtn;
     }
 }

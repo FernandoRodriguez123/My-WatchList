@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateFilm.Designer.cs">
+      <DependentUpon>CreateFilm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FilmLibraryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreateFilm.resx">
+      <DependentUpon>CreateFilm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FilmLibraryForm.resx">
       <DependentUpon>FilmLibraryForm.cs</DependentUpon>
     </EmbeddedResource>

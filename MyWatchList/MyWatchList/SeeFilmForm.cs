@@ -13,7 +13,6 @@ namespace MyWatchList
     //TODO creacion dinamica de generos en feature funcionalidad
     //TODO creacion dinamica de capitulos en feature funcionalidad, dejarlo
     //TODO para cuando esté la base de datos hecha?
-    //TODO poner los enlaces a editar y borrar
     public partial class SeeFilmForm : Form
     {
         public SeeFilmForm()

@@ -16,7 +16,7 @@ namespace MyWatchList
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SeeFilmForm());
+            Application.Run(new CreateFilmForm());
         }
     }
 }
