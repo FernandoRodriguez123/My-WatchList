@@ -1,5 +1,17 @@
 ## Avances de MyWatchList
 
+### Fechas: 22/04/2025 - 28/04/2025
+
+Durante este periodo, he terminado el apartado visual del proyecto en la rama feature/aartadoVisual. A continuación, se detallan los avances realizados:
+
+- **Pantalla de creación de serie**: Se ha completado el diseño de la última pantalla que permite a los usuarios crear una nueva serie o editar una existente según desde dónde se haya accedido.
+
+-**Entity Framework**: He estado aprendiendo esta tecnología mediante NetMentor, tanto por su [página web](https://www.netmentor.es), como de su [canal de Youtube](https://www.youtube.com/watch?v=4azrTdMtaO4&list=PLesmOrW3mp4i2RdfsPI5R6o5EVacGuovz&pp=0gcJCV8EOCosWNin)
+
+### Próximos Pasos
+
+Diseñar la estructura de la base de datos, terminar el curso de Entity Framework y comenzar con su implementación. Realizar un merge de la rama hacia main.
+
 ### Fechas: 15/04/2025 - 21/04/2025
 
 Durante este periodo, he avanzado en el apartado visual del proyecto en la rama feature/apartadoVisual. A continuación, se detallan los avances realizados:
