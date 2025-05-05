@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//TODO creacion dinamica de checkboxes en feature/funcionalidad
 namespace MyWatchList
 {
-    public partial class Form1 : Form
+    public partial class CreateFilmForm : Form
     {
-        public Form1()
+        public CreateFilmForm()
         {
             InitializeComponent();
         }

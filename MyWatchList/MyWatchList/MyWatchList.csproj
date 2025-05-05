@@ -46,14 +46,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CreateFilm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CreateFilm.Designer.cs">
+      <DependentUpon>CreateFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmLibraryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmLibraryForm.Designer.cs">
+      <DependentUpon>FilmLibraryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeFilmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeFilmForm.Designer.cs">
+      <DependentUpon>SeeFilmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreateFilm.resx">
+      <DependentUpon>CreateFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmLibraryForm.resx">
+      <DependentUpon>FilmLibraryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeFilmForm.resx">
+      <DependentUpon>SeeFilmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +106,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Icons\chevronDown.png" />
+    <Content Include="Resources\Icons\chevronUp.png" />
+    <None Include="Resources\Icons\filledStar.png" />
+    <None Include="Resources\Icons\halfStar.png" />
+    <None Include="Resources\Icons\emptyStar.png" />
+    <None Include="Resources\Icons\emptyRedHeart.png" />
+    <None Include="Resources\Icons\filledRedHeart.png" />
+    <None Include="Resources\Icons\filledBlackHeart.png" />
+    <None Include="Resources\Icons\emptyBlackHeart.png" />
+    <Content Include="Resources\Icons\MyWatchList.ico" />
+    <Content Include="Resources\Images\imagenPrueba.jpg" />
+    <Content Include="Resources\Images\MyWatchList.png" />
+    <Content Include="Resources\Images\MyWatchListTransparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
