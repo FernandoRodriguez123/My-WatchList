@@ -1,5 +1,16 @@
 ## Avances de MyWatchList
 
+### Fechas: 29/04/2025 - 05/05/2025
+
+En este periodo he terminado el curso de entity Framework, y comencé con su implementación en el proyecto. Debido a que para el uso de EF se necesita .net 8 ,
+intenté actualizarlo en el ordenador de casa para poder actualizar desde el mismo el proyecto. Tuve serias dificultades además de con su instalación también con las ramas de github.
+Por tanto tuve que borrar el proyecto para poder actualizarlo y debido a no poder instalar .net 8 el repositorio está vacío.
+
+### Próximos Pasos
+
+Conseguir actualizar a la versión necesaria en el ordenador de sobremesa, crear un proyecto actualizado y pasar las clases avanzadas anteriormente a este nuevo proyecto, además de seguir con los pasos
+declarados en la semana anterior.
+
 ### Fechas: 22/04/2025 - 28/04/2025
 
 Durante este periodo, he terminado el apartado visual del proyecto en la rama feature/aartadoVisual. A continuación, se detallan los avances realizados:
