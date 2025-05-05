@@ -1,6 +1,7 @@
 # Ignorar carpetas de Visual Studio
 .vs/
 MyWatchList/.vs/
+MyWatchList/MyWatchList/.vs/
 
 # Ignorar archivos de contenido
 *.vsix
