@@ -16,12 +16,13 @@ namespace MyWatchList
         public FilmLibraryForm()
         {
             InitializeComponent();
-            //this.navbarPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            //this.searchTxb.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            //this.searchPbx.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            //this.filterBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            //this.panelSelectionPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
-
+            brandPbx.Image = Image.FromFile(Images.MyWatchListTransparentIcon);
+            genreDropPbx.Image = Image.FromFile(Images.ChevronDown);
+            searchPbx.Image = Image.FromFile(Images.Search);
+            orderDropPbx.Image = Image.FromFile(Images.ChevronDown);
+            ratingDropPbx.Image = Image.FromFile(Images.ChevronDown);
+            statusDropPbx.Image = Image.FromFile(Images.ChevronDown);
+            imagePbx.Image = Image.FromFile(Images.ImagenPrueba);
         }
 
         private void FilmLibraryForm_Load(object sender, EventArgs e)

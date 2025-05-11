@@ -8,19 +8,21 @@ namespace MyWatchList
 {
     public class Images
     {
-        public const string ChevronDown = "Resources/chevronDown.png";
-        public const string ChevronUp = "Resources/chevronUp.png";
-        public const string EmptyBlackHeart = "Resources/emptyBlackHeart.png";
-        public const string EmptyRedHeart = "Resources/emptyRedHeart.png";
-        public const string EmptyStar = "Resources/emptyStar.png";
-        public const string FilledBlackHeart = "Resources/filledBlackHeart.png";
-        public const string FilledRedHeart = "Resources/filledRedHeart.png";
-        public const string FilledStar = "Resources/filledStar.png";
-        public const string HalfStar = "Resources/halfStar.png";
-        public const string ImagenPrueba = "Resources/imagenPrueba.png";
-        public const string MyWatchList = "Resources/MyWatchList.png";
-        public const string MyWatchListTransparentIcon = "Resources/MyWatchListTransparent.png";
-        public const string MyWatchListIcon = "Resources/MyWatchList.ico";
-        public const string Search = "Resources/search.png";
+        private const string CommonPath = "../../../Resources/";
+
+        public const string ChevronDown = CommonPath + "chevronDown.png";
+        public const string ChevronUp = CommonPath + "chevronUp.png";
+        public const string EmptyBlackHeart = CommonPath + "emptyBlackHeart.png";
+        public const string EmptyRedHeart = CommonPath + "emptyRedHeart.png";
+        public const string EmptyStar = CommonPath + "emptyStar.png";
+        public const string FilledBlackHeart = CommonPath + "filledBlackHeart.png";
+        public const string FilledRedHeart = CommonPath + "filledRedHeart.png";
+        public const string FilledStar = CommonPath + "filledStar.png";
+        public const string HalfStar = CommonPath + "halfStar.png";
+        public const string ImagenPrueba = CommonPath + "imagenPrueba.jpg";
+        public const string MyWatchList = CommonPath + "MyWatchList.png";
+        public const string MyWatchListTransparentIcon = CommonPath + "MyWatchListTransparent.png";
+        public const string MyWatchListIcon = CommonPath + "MyWatchList.ico";
+        public const string Search = CommonPath + "search.png";
     }
 }

@@ -31,3 +31,4 @@ C:\Users\ferro\source\repos\MyWatchList\MyWatchList\MyWatchList\obj\Debug\net8.0
 C:\Users\ferro\source\repos\MyWatchList\MyWatchList\MyWatchList\obj\Debug\net8.0-windows\MyWatchList.pdb
 C:\Users\ferro\source\repos\MyWatchList\MyWatchList\MyWatchList\obj\Debug\net8.0-windows\MyWatchList.genruntimeconfig.cache
 C:\Users\ferro\source\repos\MyWatchList\MyWatchList\MyWatchList\obj\Debug\net8.0-windows\ref\MyWatchList.dll
+C:\Users\ferro\source\repos\MyWatchList\MyWatchList\MyWatchList\bin\Debug\net8.0-windows\Resources\MyWatchList.ico

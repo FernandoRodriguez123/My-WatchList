@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyWatchList.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,8 @@ namespace MyWatchList
         public CreateFilmForm()
         {
             InitializeComponent();
+            searchPbx.Image = Image.FromFile(Images.Search);
+            brandPbx.Image = Image.FromFile(Images.MyWatchListTransparentIcon);
         }
     }
 }

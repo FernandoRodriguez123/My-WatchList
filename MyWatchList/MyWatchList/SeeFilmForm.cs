@@ -19,6 +19,15 @@ namespace MyWatchList
         {
             InitializeComponent();
             sinopsisTxb.Enter += (s, e) => this.ActiveControl = null;
+            brandPbx.Image = Image.FromFile(Images.MyWatchListTransparentIcon);
+            searchPbx.Image = Image.FromFile(Images.Search);
+            heartPbx.Image = Image.FromFile(Images.EmptyRedHeart);
+            star1Pbx.Image = Image.FromFile(Images.FilledStar);
+            star2Pbx.Image = Image.FromFile(Images.FilledStar);
+            star3Pbx.Image = Image.FromFile(Images.FilledStar);
+            star4Pbx.Image = Image.FromFile(Images.HalfStar);
+            star5Pbx.Image = Image.FromFile(Images.EmptyStar);
+            imagePbx.Image = Image.FromFile(Images.ImagenPrueba);
         }
     }
 }
