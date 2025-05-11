@@ -12,7 +12,7 @@ namespace MyWatchList.Models
         public string Name { get; set; }
         public string Password { get; set; }
 
-        public ICollection<UserSerieConfig> SeriesConfigurations { get; set; }
+        public ICollection<UserSerieConfig> SeriesConfigs { get; set; }
     }
 
 }

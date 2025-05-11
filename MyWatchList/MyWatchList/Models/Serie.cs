@@ -14,7 +14,7 @@ namespace MyWatchList.Models
         public string ImagePath { get; set; }
         public string Synopsis { get; set; }
 
-        public ICollection<UserSerieConfig> UserConfigurations { get; set; }
+        public ICollection<UserSerieConfig> UserConfigs { get; set; }
         public ICollection<SerieGenre> SerieGenres { get; set; }
     }
 
