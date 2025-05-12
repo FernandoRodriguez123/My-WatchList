@@ -3,15 +3,16 @@ using MyWatchList.Models;
 
 namespace MyWatchList.Data
 {
-    public class MyWatchListContext(string myDatabase) : DbContext
+    public class MyWatchListContext : DbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Serie> Series { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<UserSerieConfig> UserSerieConfigs { get; set; }
         public DbSet<SerieGenre> SerieGenres { get; set; }
+        public MyWatchListContext(DbContextOptions<MyWatchListContext> options) : base(options) { }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlite(myDatabase);
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlite();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using MyWatchList.Data;
 
 namespace MyWatchList
@@ -10,9 +12,9 @@ namespace MyWatchList
         [STAThread]
         static void Main()
         {
-            using (var context = new MyWatchListContext("Data Source=mywatchlist.db"))
+            using (var context = new MyWatchListContextFactory())
             {
-                context.Database.EnsureCreated();
+                context.CreateDbContext([]).Database.Migrate();
             }
 
             Application.EnableVisualStyles();
