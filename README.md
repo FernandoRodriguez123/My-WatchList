@@ -1,5 +1,18 @@
 ## Avances de MyWatchList
 
+### Fechas: 06/05/2025 - 12/05/2025
+
+En este periodo he conseguido organizar el proyecto con cierta limpieza. El repositorio ya está restaurado completamente y conseguí organizar los recursos del
+proyecto (imágenes, iconos...) de manera que no importa el equipo en el que se encuentre el proyecto que va a funcionar perfectamente sin tener que descargar ni mover
+ninguna imagen. También he diseñado y creado la base de datos mediante Code First (DBSet y DBContext) a pesar de que me dió algunos problemas pude solventarlos creando una
+clase que implemente el factory. Finalmente realicé la migración inicial que crea la db. Cargué una imagen a la altura del readme en la que se puede ver un diagrama de la
+base de datos que representa casi perfectamente a la susodicha. 
+
+### Próximos Pasos
+
+Debido a que esta será la última semana del proyecto, me queda terminarlo, lo cual incluye hacer que las pantallas sean minimamente responsive, hacer la lógica de
+interacción con la base de datos (consultas CRUD mediante linq) y hacer que muestre visualmente los datos (que el usuario vea las series).
+
 ### Fechas: 29/04/2025 - 05/05/2025
 
 En este periodo he terminado el curso de entity Framework, y comencé con su implementación en el proyecto. Debido a que para el uso de EF se necesita .net 8 ,
