@@ -10,7 +10,7 @@ using MyWatchList.Data;
 namespace MyWatchList.Migrations
 {
     [DbContext(typeof(MyWatchListContext))]
-    [Migration("20250512200538_MigracionInicial")]
+    [Migration("20250513164049_MigracionInicial")]
     partial class MigracionInicial
     {
         /// <inheritdoc />

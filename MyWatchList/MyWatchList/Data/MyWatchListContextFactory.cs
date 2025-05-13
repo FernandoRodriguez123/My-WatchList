@@ -13,14 +13,11 @@ namespace MyWatchList.Data
         public MyWatchListContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<MyWatchListContext>();
-            optionsBuilder.UseSqlite("Data Source=blog.db");
+            optionsBuilder.UseSqlite("Data Source=myWatchList.sqlite");
 
             return new MyWatchListContext(optionsBuilder.Options);
         }
 
-        public void Dispose()
-        {
-            
-        }
+        public void Dispose() { }
     }
 }

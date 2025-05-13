@@ -90,6 +90,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Data\Seeders\" />
     <Folder Include="Migrations\" />
   </ItemGroup>
 
