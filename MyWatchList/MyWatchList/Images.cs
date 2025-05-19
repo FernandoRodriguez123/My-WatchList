@@ -24,5 +24,6 @@ namespace MyWatchList
         public const string MyWatchListTransparentIcon = CommonPath + "MyWatchListTransparent.png";
         public const string MyWatchListIcon = CommonPath + "MyWatchList.ico";
         public const string Search = CommonPath + "search.png";
+        public const string ImageNotFound = CommonPath + "imageNotFound.jpg";
     }
 }

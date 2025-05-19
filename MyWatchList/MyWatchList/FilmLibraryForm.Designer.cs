@@ -36,38 +36,28 @@
             addLbl = new Label();
             brandPbx = new PictureBox();
             libraryLbl = new Label();
-            imagePbx = new PictureBox();
-            itemLbl = new Label();
             genrePanel = new Panel();
             genreDropPbx = new PictureBox();
             genreLbl = new Label();
             statusPanel = new Panel();
             statusDropPbx = new PictureBox();
             statusLbl = new Label();
-            panel3 = new Panel();
-            ratingLbl = new Label();
-            ratingDropPbx = new PictureBox();
-            label3 = new Label();
-            panelSelectionPanel = new Panel();
             filterBtn = new Button();
-            statusSelectionPanel = new Panel();
-            ratingSelectionPanel = new Panel();
-            orderSelectionPanel = new Panel();
             orderPanel = new Panel();
             orderLbl = new Label();
             orderDropPbx = new PictureBox();
             label5 = new Label();
+            genresFlowPanel = new FlowLayoutPanel();
+            statusFlowPanel = new FlowLayoutPanel();
+            orderFlowPanel = new FlowLayoutPanel();
+            libraryFlowPanel = new FlowLayoutPanel();
             navbarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) searchPbx).BeginInit();
             ((System.ComponentModel.ISupportInitialize) brandPbx).BeginInit();
-            ((System.ComponentModel.ISupportInitialize) imagePbx).BeginInit();
             genrePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) genreDropPbx).BeginInit();
             statusPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) statusDropPbx).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) ratingDropPbx).BeginInit();
-            ratingSelectionPanel.SuspendLayout();
             orderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) orderDropPbx).BeginInit();
             SuspendLayout();
@@ -84,9 +74,8 @@
             navbarPanel.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
             navbarPanel.ForeColor = Color.White;
             navbarPanel.Location = new Point(-1, -2);
-            navbarPanel.Margin = new Padding(3, 4, 3, 4);
             navbarPanel.Name = "navbarPanel";
-            navbarPanel.Size = new Size(909, 75);
+            navbarPanel.Size = new Size(795, 56);
             navbarPanel.TabIndex = 0;
             // 
             // searchTxb
@@ -94,19 +83,16 @@
             searchTxb.BackColor = Color.FromArgb(  64,   64,   64);
             searchTxb.BorderStyle = BorderStyle.None;
             searchTxb.ForeColor = Color.White;
-            searchTxb.Location = new Point(750, 21);
-            searchTxb.Margin = new Padding(3, 4, 3, 4);
+            searchTxb.Location = new Point(656, 16);
             searchTxb.Name = "searchTxb";
-            searchTxb.Size = new Size(100, 21);
+            searchTxb.Size = new Size(88, 17);
             searchTxb.TabIndex = 5;
-            searchTxb.Text = "Buscar...";
             // 
             // searchPbx
             // 
-            searchPbx.Location = new Point(856, 18);
-            searchPbx.Margin = new Padding(3, 4, 3, 4);
+            searchPbx.Location = new Point(749, 14);
             searchPbx.Name = "searchPbx";
-            searchPbx.Size = new Size(24, 30);
+            searchPbx.Size = new Size(21, 22);
             searchPbx.SizeMode = PictureBoxSizeMode.Zoom;
             searchPbx.TabIndex = 4;
             searchPbx.TabStop = false;
@@ -115,28 +101,26 @@
             // 
             searchPanel.BackColor = Color.White;
             searchPanel.BorderStyle = BorderStyle.Fixed3D;
-            searchPanel.Location = new Point(750, 50);
-            searchPanel.Margin = new Padding(3, 4, 3, 4);
+            searchPanel.Location = new Point(656, 38);
             searchPanel.Name = "searchPanel";
-            searchPanel.Size = new Size(130, 2);
+            searchPanel.Size = new Size(114, 2);
             searchPanel.TabIndex = 3;
             // 
             // addLbl
             // 
             addLbl.AutoSize = true;
             addLbl.Font = new Font("Bahnschrift Condensed", 13.8F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            addLbl.Location = new Point(310, 12);
+            addLbl.Location = new Point(271, 9);
             addLbl.Name = "addLbl";
-            addLbl.Size = new Size(66, 28);
+            addLbl.Size = new Size(55, 23);
             addLbl.TabIndex = 2;
             addLbl.Text = "AÑADIR";
             // 
             // brandPbx
             // 
-            brandPbx.Location = new Point(44, 5);
-            brandPbx.Margin = new Padding(3, 4, 3, 4);
+            brandPbx.Location = new Point(38, 4);
             brandPbx.Name = "brandPbx";
-            brandPbx.Size = new Size(100, 62);
+            brandPbx.Size = new Size(88, 46);
             brandPbx.SizeMode = PictureBoxSizeMode.Zoom;
             brandPbx.TabIndex = 1;
             brandPbx.TabStop = false;
@@ -145,30 +129,11 @@
             // 
             libraryLbl.AutoSize = true;
             libraryLbl.Font = new Font("Bahnschrift Condensed", 13.8F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            libraryLbl.Location = new Point(150, 14);
+            libraryLbl.Location = new Point(131, 10);
             libraryLbl.Name = "libraryLbl";
-            libraryLbl.Size = new Size(154, 28);
+            libraryLbl.Size = new Size(131, 23);
             libraryLbl.TabIndex = 0;
             libraryLbl.Text = "DIRECTORIO SERIES";
-            // 
-            // imagePbx
-            // 
-            imagePbx.Location = new Point(12, 130);
-            imagePbx.Margin = new Padding(3, 4, 3, 4);
-            imagePbx.Name = "imagePbx";
-            imagePbx.Size = new Size(104, 180);
-            imagePbx.SizeMode = PictureBoxSizeMode.Zoom;
-            imagePbx.TabIndex = 1;
-            imagePbx.TabStop = false;
-            // 
-            // itemLbl
-            // 
-            itemLbl.AutoSize = true;
-            itemLbl.Location = new Point(11, 314);
-            itemLbl.Name = "itemLbl";
-            itemLbl.Size = new Size(98, 20);
-            itemLbl.TabIndex = 2;
-            itemLbl.Text = "Death Parade";
             // 
             // genrePanel
             // 
@@ -176,18 +141,17 @@
             genrePanel.BorderStyle = BorderStyle.FixedSingle;
             genrePanel.Controls.Add(genreDropPbx);
             genrePanel.Controls.Add(genreLbl);
-            genrePanel.Location = new Point(14, 80);
-            genrePanel.Margin = new Padding(3, 4, 3, 4);
+            genrePanel.Location = new Point(12, 60);
             genrePanel.Name = "genrePanel";
-            genrePanel.Size = new Size(90, 42);
+            genrePanel.Size = new Size(79, 32);
             genrePanel.TabIndex = 3;
+            genrePanel.Click += genrePanel_Click;
             // 
             // genreDropPbx
             // 
-            genreDropPbx.Location = new Point(59, 1);
-            genreDropPbx.Margin = new Padding(3, 4, 3, 4);
+            genreDropPbx.Location = new Point(52, 1);
             genreDropPbx.Name = "genreDropPbx";
-            genreDropPbx.Size = new Size(24, 30);
+            genreDropPbx.Size = new Size(21, 22);
             genreDropPbx.SizeMode = PictureBoxSizeMode.Zoom;
             genreDropPbx.TabIndex = 1;
             genreDropPbx.TabStop = false;
@@ -196,9 +160,9 @@
             // 
             genreLbl.AutoSize = true;
             genreLbl.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            genreLbl.Location = new Point(3, 4);
+            genreLbl.Location = new Point(3, 3);
             genreLbl.Name = "genreLbl";
-            genreLbl.Size = new Size(50, 21);
+            genreLbl.Size = new Size(39, 17);
             genreLbl.TabIndex = 0;
             genreLbl.Text = "Género";
             // 
@@ -208,18 +172,17 @@
             statusPanel.BorderStyle = BorderStyle.FixedSingle;
             statusPanel.Controls.Add(statusDropPbx);
             statusPanel.Controls.Add(statusLbl);
-            statusPanel.Location = new Point(129, 80);
-            statusPanel.Margin = new Padding(3, 4, 3, 4);
+            statusPanel.Location = new Point(97, 60);
             statusPanel.Name = "statusPanel";
-            statusPanel.Size = new Size(90, 42);
+            statusPanel.Size = new Size(79, 32);
             statusPanel.TabIndex = 4;
+            statusPanel.Click += statusPanel_Click;
             // 
             // statusDropPbx
             // 
-            statusDropPbx.Location = new Point(59, 1);
-            statusDropPbx.Margin = new Padding(3, 4, 3, 4);
+            statusDropPbx.Location = new Point(52, 1);
             statusDropPbx.Name = "statusDropPbx";
-            statusDropPbx.Size = new Size(24, 30);
+            statusDropPbx.Size = new Size(21, 22);
             statusDropPbx.SizeMode = PictureBoxSizeMode.Zoom;
             statusDropPbx.TabIndex = 1;
             statusDropPbx.TabStop = false;
@@ -228,65 +191,11 @@
             // 
             statusLbl.AutoSize = true;
             statusLbl.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            statusLbl.Location = new Point(3, 4);
+            statusLbl.Location = new Point(3, 3);
             statusLbl.Name = "statusLbl";
-            statusLbl.Size = new Size(46, 21);
+            statusLbl.Size = new Size(39, 17);
             statusLbl.TabIndex = 0;
             statusLbl.Text = "Estado";
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Gainsboro;
-            panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(ratingLbl);
-            panel3.Controls.Add(ratingDropPbx);
-            panel3.Controls.Add(label3);
-            panel3.Location = new Point(236, 82);
-            panel3.Margin = new Padding(3, 4, 3, 4);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(90, 42);
-            panel3.TabIndex = 4;
-            // 
-            // ratingLbl
-            // 
-            ratingLbl.AutoSize = true;
-            ratingLbl.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            ratingLbl.Location = new Point(3, 5);
-            ratingLbl.Name = "ratingLbl";
-            ratingLbl.Size = new Size(46, 21);
-            ratingLbl.TabIndex = 2;
-            ratingLbl.Text = "Rating";
-            // 
-            // ratingDropPbx
-            // 
-            ratingDropPbx.Location = new Point(59, 1);
-            ratingDropPbx.Margin = new Padding(3, 4, 3, 4);
-            ratingDropPbx.Name = "ratingDropPbx";
-            ratingDropPbx.Size = new Size(24, 30);
-            ratingDropPbx.SizeMode = PictureBoxSizeMode.Zoom;
-            ratingDropPbx.TabIndex = 1;
-            ratingDropPbx.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            label3.Location = new Point(3, 4);
-            label3.Name = "label3";
-            label3.Size = new Size(0, 21);
-            label3.TabIndex = 0;
-            // 
-            // panelSelectionPanel
-            // 
-            panelSelectionPanel.BackColor = Color.White;
-            panelSelectionPanel.BorderStyle = BorderStyle.FixedSingle;
-            panelSelectionPanel.Location = new Point(14, 130);
-            panelSelectionPanel.Margin = new Padding(3, 4, 3, 4);
-            panelSelectionPanel.Name = "panelSelectionPanel";
-            panelSelectionPanel.Size = new Size(312, 314);
-            panelSelectionPanel.TabIndex = 5;
-            panelSelectionPanel.Visible = false;
-            panelSelectionPanel.Paint += panel2_Paint;
             // 
             // filterBtn
             // 
@@ -294,45 +203,13 @@
             filterBtn.FlatStyle = FlatStyle.Popup;
             filterBtn.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
             filterBtn.ForeColor = Color.Black;
-            filterBtn.Location = new Point(458, 79);
-            filterBtn.Margin = new Padding(3, 4, 3, 4);
+            filterBtn.Location = new Point(267, 60);
             filterBtn.Name = "filterBtn";
-            filterBtn.Size = new Size(84, 45);
+            filterBtn.Size = new Size(74, 32);
             filterBtn.TabIndex = 6;
             filterBtn.Text = "FILTRAR";
             filterBtn.UseVisualStyleBackColor = false;
-            // 
-            // statusSelectionPanel
-            // 
-            statusSelectionPanel.BackColor = Color.White;
-            statusSelectionPanel.BorderStyle = BorderStyle.FixedSingle;
-            statusSelectionPanel.Location = new Point(129, 130);
-            statusSelectionPanel.Margin = new Padding(3, 4, 3, 4);
-            statusSelectionPanel.Name = "statusSelectionPanel";
-            statusSelectionPanel.Size = new Size(312, 314);
-            statusSelectionPanel.TabIndex = 6;
-            // 
-            // ratingSelectionPanel
-            // 
-            ratingSelectionPanel.BackColor = Color.White;
-            ratingSelectionPanel.BorderStyle = BorderStyle.FixedSingle;
-            ratingSelectionPanel.Controls.Add(orderSelectionPanel);
-            ratingSelectionPanel.Location = new Point(242, 125);
-            ratingSelectionPanel.Margin = new Padding(3, 4, 3, 4);
-            ratingSelectionPanel.Name = "ratingSelectionPanel";
-            ratingSelectionPanel.Size = new Size(312, 314);
-            ratingSelectionPanel.TabIndex = 6;
-            ratingSelectionPanel.Visible = false;
-            // 
-            // orderSelectionPanel
-            // 
-            orderSelectionPanel.BorderStyle = BorderStyle.FixedSingle;
-            orderSelectionPanel.Location = new Point(108, 5);
-            orderSelectionPanel.Margin = new Padding(3, 4, 3, 4);
-            orderSelectionPanel.Name = "orderSelectionPanel";
-            orderSelectionPanel.Size = new Size(312, 314);
-            orderSelectionPanel.TabIndex = 7;
-            orderSelectionPanel.Visible = false;
+            filterBtn.Click += filterBtn_Click;
             // 
             // orderPanel
             // 
@@ -341,28 +218,27 @@
             orderPanel.Controls.Add(orderLbl);
             orderPanel.Controls.Add(orderDropPbx);
             orderPanel.Controls.Add(label5);
-            orderPanel.Location = new Point(351, 80);
-            orderPanel.Margin = new Padding(3, 4, 3, 4);
+            orderPanel.Location = new Point(182, 59);
             orderPanel.Name = "orderPanel";
-            orderPanel.Size = new Size(90, 42);
+            orderPanel.Size = new Size(79, 32);
             orderPanel.TabIndex = 9;
+            orderPanel.Click += orderPanel_Click;
             // 
             // orderLbl
             // 
             orderLbl.AutoSize = true;
             orderLbl.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            orderLbl.Location = new Point(3, 5);
+            orderLbl.Location = new Point(3, 4);
             orderLbl.Name = "orderLbl";
-            orderLbl.Size = new Size(42, 21);
+            orderLbl.Size = new Size(33, 17);
             orderLbl.TabIndex = 2;
             orderLbl.Text = "Order";
             // 
             // orderDropPbx
             // 
-            orderDropPbx.Location = new Point(59, 1);
-            orderDropPbx.Margin = new Padding(3, 4, 3, 4);
+            orderDropPbx.Location = new Point(52, 1);
             orderDropPbx.Name = "orderDropPbx";
-            orderDropPbx.Size = new Size(24, 30);
+            orderDropPbx.Size = new Size(21, 22);
             orderDropPbx.SizeMode = PictureBoxSizeMode.Zoom;
             orderDropPbx.TabIndex = 1;
             orderDropPbx.TabStop = false;
@@ -371,54 +247,77 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            label5.Location = new Point(3, 4);
+            label5.Location = new Point(3, 3);
             label5.Name = "label5";
-            label5.Size = new Size(0, 21);
+            label5.Size = new Size(0, 17);
             label5.TabIndex = 0;
+            // 
+            // genresFlowPanel
+            // 
+            genresFlowPanel.BorderStyle = BorderStyle.FixedSingle;
+            genresFlowPanel.Location = new Point(65, 98);
+            genresFlowPanel.Name = "genresFlowPanel";
+            genresFlowPanel.Size = new Size(260, 244);
+            genresFlowPanel.TabIndex = 10;
+            genresFlowPanel.Visible = false;
+            // 
+            // statusFlowPanel
+            // 
+            statusFlowPanel.BorderStyle = BorderStyle.FixedSingle;
+            statusFlowPanel.Location = new Point(150, 97);
+            statusFlowPanel.Name = "statusFlowPanel";
+            statusFlowPanel.Size = new Size(260, 244);
+            statusFlowPanel.TabIndex = 11;
+            statusFlowPanel.Visible = false;
+            // 
+            // orderFlowPanel
+            // 
+            orderFlowPanel.BorderStyle = BorderStyle.FixedSingle;
+            orderFlowPanel.Location = new Point(235, 97);
+            orderFlowPanel.Name = "orderFlowPanel";
+            orderFlowPanel.Size = new Size(260, 244);
+            orderFlowPanel.TabIndex = 11;
+            orderFlowPanel.Visible = false;
+            // 
+            // libraryFlowPanel
+            // 
+            libraryFlowPanel.Location = new Point(12, 99);
+            libraryFlowPanel.Name = "libraryFlowPanel";
+            libraryFlowPanel.Size = new Size(782, 602);
+            libraryFlowPanel.TabIndex = 12;
             // 
             // FilmLibraryForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(1422, 954);
+            ClientSize = new Size(794, 722);
+            Controls.Add(libraryFlowPanel);
+            Controls.Add(orderFlowPanel);
+            Controls.Add(statusFlowPanel);
+            Controls.Add(genresFlowPanel);
             Controls.Add(orderPanel);
-            Controls.Add(ratingSelectionPanel);
-            Controls.Add(statusSelectionPanel);
             Controls.Add(filterBtn);
-            Controls.Add(panelSelectionPanel);
             Controls.Add(statusPanel);
-            Controls.Add(panel3);
             Controls.Add(genrePanel);
-            Controls.Add(itemLbl);
-            Controls.Add(imagePbx);
             Controls.Add(navbarPanel);
             Icon = (Icon) resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
-            MinimumSize = new Size(1440, 1001);
             Name = "FilmLibraryForm";
             Text = "MyWatchList";
-            Load += FilmLibraryForm_Load;
             navbarPanel.ResumeLayout(false);
             navbarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize) searchPbx).EndInit();
             ((System.ComponentModel.ISupportInitialize) brandPbx).EndInit();
-            ((System.ComponentModel.ISupportInitialize) imagePbx).EndInit();
             genrePanel.ResumeLayout(false);
             genrePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize) genreDropPbx).EndInit();
             statusPanel.ResumeLayout(false);
             statusPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize) statusDropPbx).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize) ratingDropPbx).EndInit();
-            ratingSelectionPanel.ResumeLayout(false);
             orderPanel.ResumeLayout(false);
             orderPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize) orderDropPbx).EndInit();
             ResumeLayout(false);
-            PerformLayout();
 
         }
 
@@ -431,26 +330,20 @@
         private System.Windows.Forms.Panel searchPanel;
         private System.Windows.Forms.PictureBox searchPbx;
         private System.Windows.Forms.TextBox searchTxb;
-        private System.Windows.Forms.PictureBox imagePbx;
-        private System.Windows.Forms.Label itemLbl;
         private System.Windows.Forms.Panel genrePanel;
         private System.Windows.Forms.Label genreLbl;
         private System.Windows.Forms.PictureBox genreDropPbx;
         private System.Windows.Forms.Panel statusPanel;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox ratingDropPbx;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox statusDropPbx;
         private System.Windows.Forms.Label statusLbl;
-        private System.Windows.Forms.Label ratingLbl;
-        private System.Windows.Forms.Panel panelSelectionPanel;
         private System.Windows.Forms.Button filterBtn;
-        private System.Windows.Forms.Panel statusSelectionPanel;
-        private System.Windows.Forms.Panel ratingSelectionPanel;
-        private System.Windows.Forms.Panel orderSelectionPanel;
         private System.Windows.Forms.Panel orderPanel;
         private System.Windows.Forms.Label orderLbl;
         private System.Windows.Forms.PictureBox orderDropPbx;
         private System.Windows.Forms.Label label5;
+        private FlowLayoutPanel genresFlowPanel;
+        private FlowLayoutPanel statusFlowPanel;
+        private FlowLayoutPanel orderFlowPanel;
+        private FlowLayoutPanel libraryFlowPanel;
     }
 }

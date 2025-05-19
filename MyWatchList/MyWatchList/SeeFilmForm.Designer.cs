@@ -29,316 +29,279 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeeFilmForm));
-            this.navbarPanel = new System.Windows.Forms.Panel();
-            this.searchTxb = new System.Windows.Forms.TextBox();
-            this.searchPbx = new System.Windows.Forms.PictureBox();
-            this.searchPanel = new System.Windows.Forms.Panel();
-            this.addLbl = new System.Windows.Forms.Label();
-            this.brandPbx = new System.Windows.Forms.PictureBox();
-            this.libraryLbl = new System.Windows.Forms.Label();
-            this.titleLbl = new System.Windows.Forms.Label();
-            this.GenresPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.capsPanel = new System.Windows.Forms.Panel();
-            this.sinopsisTxb = new System.Windows.Forms.TextBox();
-            this.heartPbx = new System.Windows.Forms.PictureBox();
-            this.star4Pbx = new System.Windows.Forms.PictureBox();
-            this.star5Pbx = new System.Windows.Forms.PictureBox();
-            this.star2Pbx = new System.Windows.Forms.PictureBox();
-            this.star3Pbx = new System.Windows.Forms.PictureBox();
-            this.star1Pbx = new System.Windows.Forms.PictureBox();
-            this.imagePbx = new System.Windows.Forms.PictureBox();
-            this.statusBtn = new System.Windows.Forms.Button();
-            this.editBtn = new System.Windows.Forms.Button();
-            this.removeBtn = new System.Windows.Forms.Button();
-            this.navbarPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchPbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brandPbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.heartPbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star4Pbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star5Pbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star2Pbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star3Pbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star1Pbx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagePbx)).BeginInit();
-            this.SuspendLayout();
+            navbarPanel = new Panel();
+            addLbl = new Label();
+            brandPbx = new PictureBox();
+            libraryLbl = new Label();
+            titleLbl = new Label();
+            sinopsisTxb = new TextBox();
+            heartPbx = new PictureBox();
+            star4Pbx = new PictureBox();
+            star5Pbx = new PictureBox();
+            star2Pbx = new PictureBox();
+            star3Pbx = new PictureBox();
+            star1Pbx = new PictureBox();
+            imagePbx = new PictureBox();
+            statusBtn = new Button();
+            editBtn = new Button();
+            removeBtn = new Button();
+            genresFlowPanel = new FlowLayoutPanel();
+            submitBtn = new Button();
+            episodesFlowPanel = new FlowLayoutPanel();
+            navbarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) brandPbx).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) heartPbx).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) star4Pbx).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) star5Pbx).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) star2Pbx).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) star3Pbx).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) star1Pbx).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) imagePbx).BeginInit();
+            SuspendLayout();
             // 
             // navbarPanel
             // 
-            this.navbarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.navbarPanel.Controls.Add(this.searchTxb);
-            this.navbarPanel.Controls.Add(this.searchPbx);
-            this.navbarPanel.Controls.Add(this.searchPanel);
-            this.navbarPanel.Controls.Add(this.addLbl);
-            this.navbarPanel.Controls.Add(this.brandPbx);
-            this.navbarPanel.Controls.Add(this.libraryLbl);
-            this.navbarPanel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.navbarPanel.ForeColor = System.Drawing.Color.White;
-            this.navbarPanel.Location = new System.Drawing.Point(0, 2);
-            this.navbarPanel.Name = "navbarPanel";
-            this.navbarPanel.Size = new System.Drawing.Size(909, 60);
-            this.navbarPanel.TabIndex = 1;
-            // 
-            // searchTxb
-            // 
-            this.searchTxb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(66)))), ((int)(((byte)(72)))));
-            this.searchTxb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchTxb.ForeColor = System.Drawing.Color.White;
-            this.searchTxb.Location = new System.Drawing.Point(750, 17);
-            this.searchTxb.Name = "searchTxb";
-            this.searchTxb.Size = new System.Drawing.Size(100, 21);
-            this.searchTxb.TabIndex = 5;
-            this.searchTxb.Text = "Buscar...";
-            // 
-            // searchPbx
-            // 
-            this.searchPbx.Image = Image.FromFile(Images.Search);
-            this.searchPbx.Location = new System.Drawing.Point(856, 14);
-            this.searchPbx.Name = "searchPbx";
-            this.searchPbx.Size = new System.Drawing.Size(24, 24);
-            this.searchPbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.searchPbx.TabIndex = 4;
-            this.searchPbx.TabStop = false;
-            // 
-            // searchPanel
-            // 
-            this.searchPanel.BackColor = System.Drawing.Color.White;
-            this.searchPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.searchPanel.Location = new System.Drawing.Point(750, 40);
-            this.searchPanel.Name = "searchPanel";
-            this.searchPanel.Size = new System.Drawing.Size(130, 2);
-            this.searchPanel.TabIndex = 3;
+            navbarPanel.BackColor = Color.FromArgb(  64,   64,   64);
+            navbarPanel.Controls.Add(addLbl);
+            navbarPanel.Controls.Add(brandPbx);
+            navbarPanel.Controls.Add(libraryLbl);
+            navbarPanel.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
+            navbarPanel.ForeColor = Color.White;
+            navbarPanel.Location = new Point(0, 2);
+            navbarPanel.Name = "navbarPanel";
+            navbarPanel.Size = new Size(795, 56);
+            navbarPanel.TabIndex = 1;
             // 
             // addLbl
             // 
-            this.addLbl.AutoSize = true;
-            this.addLbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addLbl.Location = new System.Drawing.Point(310, 10);
-            this.addLbl.Name = "addLbl";
-            this.addLbl.Size = new System.Drawing.Size(66, 28);
-            this.addLbl.TabIndex = 2;
-            this.addLbl.Text = "AÑADIR";
+            addLbl.AutoSize = true;
+            addLbl.Font = new Font("Bahnschrift Condensed", 13.8F, FontStyle.Regular, GraphicsUnit.Point,  0);
+            addLbl.Location = new Point(271, 9);
+            addLbl.Name = "addLbl";
+            addLbl.Size = new Size(55, 23);
+            addLbl.TabIndex = 2;
+            addLbl.Text = "AÑADIR";
             // 
             // brandPbx
             // 
-            this.brandPbx.Image = System.Drawing.Image.FromFile(Images.MyWatchListTransparentIcon);
-            this.brandPbx.Location = new System.Drawing.Point(44, 4);
-            this.brandPbx.Name = "brandPbx";
-            this.brandPbx.Size = new System.Drawing.Size(100, 50);
-            this.brandPbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.brandPbx.TabIndex = 1;
-            this.brandPbx.TabStop = false;
+            brandPbx.Location = new Point(38, 4);
+            brandPbx.Name = "brandPbx";
+            brandPbx.Size = new Size(88, 47);
+            brandPbx.SizeMode = PictureBoxSizeMode.Zoom;
+            brandPbx.TabIndex = 1;
+            brandPbx.TabStop = false;
             // 
             // libraryLbl
             // 
-            this.libraryLbl.AutoSize = true;
-            this.libraryLbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.libraryLbl.Location = new System.Drawing.Point(150, 11);
-            this.libraryLbl.Name = "libraryLbl";
-            this.libraryLbl.Size = new System.Drawing.Size(154, 28);
-            this.libraryLbl.TabIndex = 0;
-            this.libraryLbl.Text = "DIRECTORIO SERIES";
+            libraryLbl.AutoSize = true;
+            libraryLbl.Font = new Font("Bahnschrift Condensed", 13.8F, FontStyle.Regular, GraphicsUnit.Point,  0);
+            libraryLbl.Location = new Point(131, 10);
+            libraryLbl.Name = "libraryLbl";
+            libraryLbl.Size = new Size(131, 23);
+            libraryLbl.TabIndex = 0;
+            libraryLbl.Text = "DIRECTORIO SERIES";
             // 
             // titleLbl
             // 
-            this.titleLbl.AutoSize = true;
-            this.titleLbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLbl.Location = new System.Drawing.Point(291, 65);
-            this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(148, 36);
-            this.titleLbl.TabIndex = 3;
-            this.titleLbl.Text = "Death Parade";
-            // 
-            // GenresPanel
-            // 
-            this.GenresPanel.BackColor = System.Drawing.Color.White;
-            this.GenresPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GenresPanel.Location = new System.Drawing.Point(297, 105);
-            this.GenresPanel.Name = "GenresPanel";
-            this.GenresPanel.Size = new System.Drawing.Size(651, 41);
-            this.GenresPanel.TabIndex = 4;
-            // 
-            // capsPanel
-            // 
-            this.capsPanel.AutoScroll = true;
-            this.capsPanel.BackColor = System.Drawing.Color.White;
-            this.capsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.capsPanel.Location = new System.Drawing.Point(297, 352);
-            this.capsPanel.Name = "capsPanel";
-            this.capsPanel.Size = new System.Drawing.Size(651, 347);
-            this.capsPanel.TabIndex = 6;
+            titleLbl.AutoSize = true;
+            titleLbl.Font = new Font("Bahnschrift Condensed", 18F, FontStyle.Regular, GraphicsUnit.Point,  0);
+            titleLbl.Location = new Point(255, 61);
+            titleLbl.Name = "titleLbl";
+            titleLbl.Size = new Size(119, 29);
+            titleLbl.TabIndex = 3;
+            titleLbl.Text = "Death Parade";
             // 
             // sinopsisTxb
             // 
-            this.sinopsisTxb.BackColor = System.Drawing.Color.White;
-            this.sinopsisTxb.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sinopsisTxb.Location = new System.Drawing.Point(297, 168);
-            this.sinopsisTxb.Multiline = true;
-            this.sinopsisTxb.Name = "sinopsisTxb";
-            this.sinopsisTxb.ReadOnly = true;
-            this.sinopsisTxb.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.sinopsisTxb.Size = new System.Drawing.Size(651, 169);
-            this.sinopsisTxb.TabIndex = 7;
-            this.sinopsisTxb.TabStop = false;
-            this.sinopsisTxb.Text = resources.GetString("sinopsisTxb.Text");
+            sinopsisTxb.BackColor = Color.White;
+            sinopsisTxb.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
+            sinopsisTxb.Location = new Point(260, 158);
+            sinopsisTxb.Multiline = true;
+            sinopsisTxb.Name = "sinopsisTxb";
+            sinopsisTxb.ReadOnly = true;
+            sinopsisTxb.ScrollBars = ScrollBars.Vertical;
+            sinopsisTxb.Size = new Size(535, 159);
+            sinopsisTxb.TabIndex = 7;
+            sinopsisTxb.TabStop = false;
+            sinopsisTxb.Text = resources.GetString("sinopsisTxb.Text");
             // 
             // heartPbx
             // 
-            this.heartPbx.Image = System.Drawing.Image.FromFile(Images.FilledBlackHeart);
-            this.heartPbx.Location = new System.Drawing.Point(191, 380);
-            this.heartPbx.Name = "heartPbx";
-            this.heartPbx.Size = new System.Drawing.Size(83, 87);
-            this.heartPbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.heartPbx.TabIndex = 13;
-            this.heartPbx.TabStop = false;
+            heartPbx.Location = new Point(167, 356);
+            heartPbx.Name = "heartPbx";
+            heartPbx.Size = new Size(73, 82);
+            heartPbx.SizeMode = PictureBoxSizeMode.Zoom;
+            heartPbx.TabIndex = 13;
+            heartPbx.TabStop = false;
             // 
             // star4Pbx
             // 
-            this.star4Pbx.Image = System.Drawing.Image.FromFile(Images.FilledStar);
-            this.star4Pbx.Location = new System.Drawing.Point(121, 380);
-            this.star4Pbx.Name = "star4Pbx";
-            this.star4Pbx.Size = new System.Drawing.Size(30, 30);
-            this.star4Pbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.star4Pbx.TabIndex = 12;
-            this.star4Pbx.TabStop = false;
+            star4Pbx.Location = new Point(106, 356);
+            star4Pbx.Name = "star4Pbx";
+            star4Pbx.Size = new Size(26, 28);
+            star4Pbx.SizeMode = PictureBoxSizeMode.Zoom;
+            star4Pbx.TabIndex = 12;
+            star4Pbx.TabStop = false;
             // 
             // star5Pbx
             // 
-            this.star5Pbx.Image = System.Drawing.Image.FromFile(Images.EmptyStar);
-            this.star5Pbx.Location = new System.Drawing.Point(155, 380);
-            this.star5Pbx.Name = "star5Pbx";
-            this.star5Pbx.Size = new System.Drawing.Size(30, 30);
-            this.star5Pbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.star5Pbx.TabIndex = 11;
-            this.star5Pbx.TabStop = false;
+            star5Pbx.Location = new Point(136, 356);
+            star5Pbx.Name = "star5Pbx";
+            star5Pbx.Size = new Size(26, 28);
+            star5Pbx.SizeMode = PictureBoxSizeMode.Zoom;
+            star5Pbx.TabIndex = 11;
+            star5Pbx.TabStop = false;
             // 
             // star2Pbx
             // 
-            this.star2Pbx.Image = System.Drawing.Image.FromFile(Images.FilledStar);
-            this.star2Pbx.Location = new System.Drawing.Point(49, 380);
-            this.star2Pbx.Name = "star2Pbx";
-            this.star2Pbx.Size = new System.Drawing.Size(30, 30);
-            this.star2Pbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.star2Pbx.TabIndex = 10;
-            this.star2Pbx.TabStop = false;
+            star2Pbx.Location = new Point(43, 356);
+            star2Pbx.Name = "star2Pbx";
+            star2Pbx.Size = new Size(26, 28);
+            star2Pbx.SizeMode = PictureBoxSizeMode.Zoom;
+            star2Pbx.TabIndex = 10;
+            star2Pbx.TabStop = false;
             // 
             // star3Pbx
             // 
-            this.star3Pbx.Image = System.Drawing.Image.FromFile(Images.FilledStar);
-            this.star3Pbx.Location = new System.Drawing.Point(85, 380);
-            this.star3Pbx.Name = "star3Pbx";
-            this.star3Pbx.Size = new System.Drawing.Size(30, 30);
-            this.star3Pbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.star3Pbx.TabIndex = 9;
-            this.star3Pbx.TabStop = false;
+            star3Pbx.Location = new Point(74, 356);
+            star3Pbx.Name = "star3Pbx";
+            star3Pbx.Size = new Size(26, 28);
+            star3Pbx.SizeMode = PictureBoxSizeMode.Zoom;
+            star3Pbx.TabIndex = 9;
+            star3Pbx.TabStop = false;
             // 
             // star1Pbx
             // 
-            this.star1Pbx.Image = System.Drawing.Image.FromFile(Images.FilledStar);
-            this.star1Pbx.Location = new System.Drawing.Point(13, 380);
-            this.star1Pbx.Name = "star1Pbx";
-            this.star1Pbx.Size = new System.Drawing.Size(30, 30);
-            this.star1Pbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.star1Pbx.TabIndex = 8;
-            this.star1Pbx.TabStop = false;
+            star1Pbx.Location = new Point(11, 356);
+            star1Pbx.Name = "star1Pbx";
+            star1Pbx.Size = new Size(26, 28);
+            star1Pbx.SizeMode = PictureBoxSizeMode.Zoom;
+            star1Pbx.TabIndex = 8;
+            star1Pbx.TabStop = false;
             // 
             // imagePbx
             // 
-            this.imagePbx.Image = System.Drawing.Image.FromFile(Images.ImagenPrueba);
-            this.imagePbx.Location = new System.Drawing.Point(13, 69);
-            this.imagePbx.Name = "imagePbx";
-            this.imagePbx.Size = new System.Drawing.Size(199, 282);
-            this.imagePbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagePbx.TabIndex = 2;
-            this.imagePbx.TabStop = false;
+            imagePbx.Location = new Point(11, 65);
+            imagePbx.Name = "imagePbx";
+            imagePbx.Size = new Size(174, 264);
+            imagePbx.SizeMode = PictureBoxSizeMode.StretchImage;
+            imagePbx.TabIndex = 2;
+            imagePbx.TabStop = false;
             // 
             // statusBtn
             // 
-            this.statusBtn.BackColor = System.Drawing.Color.Red;
-            this.statusBtn.Font = new System.Drawing.Font("Bahnschrift", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusBtn.ForeColor = System.Drawing.Color.White;
-            this.statusBtn.Location = new System.Drawing.Point(13, 417);
-            this.statusBtn.Name = "statusBtn";
-            this.statusBtn.Size = new System.Drawing.Size(172, 50);
-            this.statusBtn.TabIndex = 14;
-            this.statusBtn.Text = "TERMINADA";
-            this.statusBtn.UseVisualStyleBackColor = false;
+            statusBtn.BackColor = Color.Red;
+            statusBtn.Font = new Font("Bahnschrift", 13.2F, FontStyle.Bold, GraphicsUnit.Point,  0);
+            statusBtn.ForeColor = Color.White;
+            statusBtn.Location = new Point(11, 391);
+            statusBtn.Name = "statusBtn";
+            statusBtn.Size = new Size(150, 47);
+            statusBtn.TabIndex = 14;
+            statusBtn.Text = "TERMINADA";
+            statusBtn.UseVisualStyleBackColor = false;
             // 
             // editBtn
             // 
-            this.editBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.editBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editBtn.ForeColor = System.Drawing.Color.White;
-            this.editBtn.Location = new System.Drawing.Point(13, 473);
-            this.editBtn.Name = "editBtn";
-            this.editBtn.Size = new System.Drawing.Size(124, 42);
-            this.editBtn.TabIndex = 15;
-            this.editBtn.Text = "Editar";
-            this.editBtn.UseVisualStyleBackColor = false;
+            editBtn.BackColor = Color.FromArgb(  64,   64,   64);
+            editBtn.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
+            editBtn.ForeColor = Color.White;
+            editBtn.Location = new Point(11, 443);
+            editBtn.Name = "editBtn";
+            editBtn.Size = new Size(108, 39);
+            editBtn.TabIndex = 15;
+            editBtn.Text = "Editar";
+            editBtn.UseVisualStyleBackColor = false;
+            editBtn.Click += editBtn_Click;
             // 
             // removeBtn
             // 
-            this.removeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.removeBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeBtn.ForeColor = System.Drawing.Color.White;
-            this.removeBtn.Location = new System.Drawing.Point(150, 473);
-            this.removeBtn.Name = "removeBtn";
-            this.removeBtn.Size = new System.Drawing.Size(124, 42);
-            this.removeBtn.TabIndex = 16;
-            this.removeBtn.Text = "Eliminar";
-            this.removeBtn.UseVisualStyleBackColor = false;
+            removeBtn.BackColor = Color.FromArgb(  64,   64,   64);
+            removeBtn.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
+            removeBtn.ForeColor = Color.White;
+            removeBtn.Location = new Point(131, 443);
+            removeBtn.Name = "removeBtn";
+            removeBtn.Size = new Size(108, 39);
+            removeBtn.TabIndex = 16;
+            removeBtn.Text = "Eliminar";
+            removeBtn.UseVisualStyleBackColor = false;
+            removeBtn.Click += removeBtn_Click;
+            // 
+            // genresFlowPanel
+            // 
+            genresFlowPanel.BorderStyle = BorderStyle.FixedSingle;
+            genresFlowPanel.Location = new Point(260, 93);
+            genresFlowPanel.Name = "genresFlowPanel";
+            genresFlowPanel.Size = new Size(535, 59);
+            genresFlowPanel.TabIndex = 17;
+            // 
+            // submitBtn
+            // 
+            submitBtn.BackColor = Color.FromArgb(  64,   64,   64);
+            submitBtn.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
+            submitBtn.ForeColor = Color.White;
+            submitBtn.Location = new Point(12, 488);
+            submitBtn.Name = "submitBtn";
+            submitBtn.Size = new Size(227, 39);
+            submitBtn.TabIndex = 18;
+            submitBtn.Text = "Actualizar Configuración";
+            submitBtn.UseVisualStyleBackColor = false;
+            submitBtn.Click += submitBtn_Click;
+            // 
+            // episodesFlowPanel
+            // 
+            episodesFlowPanel.Location = new Point(260, 356);
+            episodesFlowPanel.Name = "episodesFlowPanel";
+            episodesFlowPanel.Size = new Size(535, 338);
+            episodesFlowPanel.TabIndex = 21;
             // 
             // SeeFilmForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1422, 763);
-            this.Controls.Add(this.removeBtn);
-            this.Controls.Add(this.editBtn);
-            this.Controls.Add(this.statusBtn);
-            this.Controls.Add(this.heartPbx);
-            this.Controls.Add(this.star4Pbx);
-            this.Controls.Add(this.star5Pbx);
-            this.Controls.Add(this.star2Pbx);
-            this.Controls.Add(this.star3Pbx);
-            this.Controls.Add(this.star1Pbx);
-            this.Controls.Add(this.sinopsisTxb);
-            this.Controls.Add(this.capsPanel);
-            this.Controls.Add(this.GenresPanel);
-            this.Controls.Add(this.titleLbl);
-            this.Controls.Add(this.imagePbx);
-            this.Controls.Add(this.navbarPanel);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "SeeFilmForm";
-            this.Text = "MyWatchList";
-            this.navbarPanel.ResumeLayout(false);
-            this.navbarPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchPbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brandPbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.heartPbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star4Pbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star5Pbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star2Pbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star3Pbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.star1Pbx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagePbx)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(795, 715);
+            Controls.Add(episodesFlowPanel);
+            Controls.Add(submitBtn);
+            Controls.Add(genresFlowPanel);
+            Controls.Add(removeBtn);
+            Controls.Add(editBtn);
+            Controls.Add(statusBtn);
+            Controls.Add(heartPbx);
+            Controls.Add(star4Pbx);
+            Controls.Add(star5Pbx);
+            Controls.Add(star2Pbx);
+            Controls.Add(star3Pbx);
+            Controls.Add(star1Pbx);
+            Controls.Add(sinopsisTxb);
+            Controls.Add(titleLbl);
+            Controls.Add(imagePbx);
+            Controls.Add(navbarPanel);
+            Icon = (Icon) resources.GetObject("$this.Icon");
+            Name = "SeeFilmForm";
+            Text = "MyWatchList";
+            navbarPanel.ResumeLayout(false);
+            navbarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize) brandPbx).EndInit();
+            ((System.ComponentModel.ISupportInitialize) heartPbx).EndInit();
+            ((System.ComponentModel.ISupportInitialize) star4Pbx).EndInit();
+            ((System.ComponentModel.ISupportInitialize) star5Pbx).EndInit();
+            ((System.ComponentModel.ISupportInitialize) star2Pbx).EndInit();
+            ((System.ComponentModel.ISupportInitialize) star3Pbx).EndInit();
+            ((System.ComponentModel.ISupportInitialize) star1Pbx).EndInit();
+            ((System.ComponentModel.ISupportInitialize) imagePbx).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel navbarPanel;
-        private System.Windows.Forms.TextBox searchTxb;
-        private System.Windows.Forms.PictureBox searchPbx;
-        private System.Windows.Forms.Panel searchPanel;
         private System.Windows.Forms.Label addLbl;
         private System.Windows.Forms.PictureBox brandPbx;
         private System.Windows.Forms.Label libraryLbl;
         private System.Windows.Forms.PictureBox imagePbx;
         private System.Windows.Forms.Label titleLbl;
-        private System.Windows.Forms.FlowLayoutPanel GenresPanel;
         private System.Windows.Forms.Panel capsPanel;
         private System.Windows.Forms.TextBox sinopsisTxb;
         private System.Windows.Forms.PictureBox star1Pbx;
@@ -350,5 +313,8 @@
         private System.Windows.Forms.Button statusBtn;
         private System.Windows.Forms.Button editBtn;
         private System.Windows.Forms.Button removeBtn;
+        private FlowLayoutPanel genresFlowPanel;
+        private Button submitBtn;
+        private FlowLayoutPanel episodesFlowPanel;
     }
 }

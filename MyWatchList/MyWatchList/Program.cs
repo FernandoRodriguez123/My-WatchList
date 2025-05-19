@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using MyWatchList.Data;
+using MyWatchList.Data.Controller;
 
 namespace MyWatchList
 {
@@ -12,14 +13,16 @@ namespace MyWatchList
         [STAThread]
         static void Main()
         {
-            using (var context = new MyWatchListContextFactory())
-            {
-                context.CreateDbContext([]).Database.Migrate();
-            }
+            var factory = new MyWatchListContextFactory();
+            using var context = factory.CreateDbContext([]);
+
+            context.Database.Migrate();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SeeFilmForm());
+
+            var servicio = new MyWatchListQueryService(context);
+            Application.Run(new SignInForm(servicio));
         }
     }
 }

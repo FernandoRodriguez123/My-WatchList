@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateFilmForm));
             navbarPanel = new Panel();
-            searchTxb = new TextBox();
-            searchPbx = new PictureBox();
-            searchPanel = new Panel();
             addLbl = new Label();
             brandPbx = new PictureBox();
             libraryLbl = new Label();
@@ -46,77 +43,39 @@
             textBox1 = new TextBox();
             imageBtn = new Button();
             createBtn = new Button();
-            genresPanel = new Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             navbarPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) searchPbx).BeginInit();
             ((System.ComponentModel.ISupportInitialize) brandPbx).BeginInit();
             SuspendLayout();
             // 
             // navbarPanel
             // 
             navbarPanel.BackColor = Color.FromArgb(  64,   64,   64);
-            navbarPanel.Controls.Add(searchTxb);
-            navbarPanel.Controls.Add(searchPbx);
-            navbarPanel.Controls.Add(searchPanel);
             navbarPanel.Controls.Add(addLbl);
             navbarPanel.Controls.Add(brandPbx);
             navbarPanel.Controls.Add(libraryLbl);
             navbarPanel.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
             navbarPanel.ForeColor = Color.White;
-            navbarPanel.Location = new Point(1, 4);
-            navbarPanel.Margin = new Padding(3, 4, 3, 4);
+            navbarPanel.Location = new Point(1, 3);
             navbarPanel.Name = "navbarPanel";
-            navbarPanel.Size = new Size(909, 75);
+            navbarPanel.Size = new Size(795, 56);
             navbarPanel.TabIndex = 2;
-            // 
-            // searchTxb
-            // 
-            searchTxb.BackColor = Color.FromArgb(  59,   66,   72);
-            searchTxb.BorderStyle = BorderStyle.None;
-            searchTxb.ForeColor = Color.White;
-            searchTxb.Location = new Point(750, 21);
-            searchTxb.Margin = new Padding(3, 4, 3, 4);
-            searchTxb.Name = "searchTxb";
-            searchTxb.Size = new Size(100, 21);
-            searchTxb.TabIndex = 5;
-            searchTxb.Text = "Buscar...";
-            // 
-            // searchPbx
-            // 
-            searchPbx.Location = new Point(856, 18);
-            searchPbx.Margin = new Padding(3, 4, 3, 4);
-            searchPbx.Name = "searchPbx";
-            searchPbx.Size = new Size(24, 30);
-            searchPbx.SizeMode = PictureBoxSizeMode.Zoom;
-            searchPbx.TabIndex = 4;
-            searchPbx.TabStop = false;
-            // 
-            // searchPanel
-            // 
-            searchPanel.BackColor = Color.White;
-            searchPanel.BorderStyle = BorderStyle.Fixed3D;
-            searchPanel.Location = new Point(750, 50);
-            searchPanel.Margin = new Padding(3, 4, 3, 4);
-            searchPanel.Name = "searchPanel";
-            searchPanel.Size = new Size(130, 2);
-            searchPanel.TabIndex = 3;
             // 
             // addLbl
             // 
             addLbl.AutoSize = true;
             addLbl.Font = new Font("Bahnschrift Condensed", 13.8F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            addLbl.Location = new Point(310, 12);
+            addLbl.Location = new Point(271, 9);
             addLbl.Name = "addLbl";
-            addLbl.Size = new Size(66, 28);
+            addLbl.Size = new Size(55, 23);
             addLbl.TabIndex = 2;
             addLbl.Text = "AÑADIR";
             // 
             // brandPbx
             // 
-            brandPbx.Location = new Point(44, 5);
-            brandPbx.Margin = new Padding(3, 4, 3, 4);
+            brandPbx.Location = new Point(38, 4);
             brandPbx.Name = "brandPbx";
-            brandPbx.Size = new Size(100, 62);
+            brandPbx.Size = new Size(88, 46);
             brandPbx.SizeMode = PictureBoxSizeMode.Zoom;
             brandPbx.TabIndex = 1;
             brandPbx.TabStop = false;
@@ -125,67 +84,63 @@
             // 
             libraryLbl.AutoSize = true;
             libraryLbl.Font = new Font("Bahnschrift Condensed", 13.8F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            libraryLbl.Location = new Point(150, 14);
+            libraryLbl.Location = new Point(131, 10);
             libraryLbl.Name = "libraryLbl";
-            libraryLbl.Size = new Size(154, 28);
+            libraryLbl.Size = new Size(131, 23);
             libraryLbl.TabIndex = 0;
             libraryLbl.Text = "DIRECTORIO SERIES";
             // 
             // titlePanel
             // 
             titlePanel.BackColor = Color.Black;
-            titlePanel.Location = new Point(12, 154);
-            titlePanel.Margin = new Padding(3, 4, 3, 4);
+            titlePanel.Location = new Point(10, 116);
             titlePanel.Name = "titlePanel";
-            titlePanel.Size = new Size(250, 2);
+            titlePanel.Size = new Size(219, 2);
             titlePanel.TabIndex = 10;
             // 
             // titleTxb
             // 
             titleTxb.BackColor = Color.WhiteSmoke;
             titleTxb.BorderStyle = BorderStyle.None;
-            titleTxb.Location = new Point(11, 128);
-            titleTxb.Margin = new Padding(3, 4, 3, 4);
+            titleTxb.Location = new Point(10, 96);
             titleTxb.Name = "titleTxb";
-            titleTxb.Size = new Size(251, 20);
+            titleTxb.Size = new Size(220, 16);
             titleTxb.TabIndex = 9;
             // 
             // titleLbl
             // 
             titleLbl.AutoSize = true;
             titleLbl.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            titleLbl.Location = new Point(8, 91);
+            titleLbl.Location = new Point(7, 68);
             titleLbl.Name = "titleLbl";
-            titleLbl.Size = new Size(40, 21);
+            titleLbl.Size = new Size(34, 17);
             titleLbl.TabIndex = 8;
             titleLbl.Text = "Título";
             // 
             // chaptersPanel
             // 
             chaptersPanel.BackColor = Color.Black;
-            chaptersPanel.Location = new Point(12, 252);
-            chaptersPanel.Margin = new Padding(3, 4, 3, 4);
+            chaptersPanel.Location = new Point(10, 189);
             chaptersPanel.Name = "chaptersPanel";
-            chaptersPanel.Size = new Size(250, 2);
+            chaptersPanel.Size = new Size(219, 2);
             chaptersPanel.TabIndex = 16;
             // 
             // chaptersTxb
             // 
             chaptersTxb.BackColor = Color.WhiteSmoke;
             chaptersTxb.BorderStyle = BorderStyle.None;
-            chaptersTxb.Location = new Point(11, 226);
-            chaptersTxb.Margin = new Padding(3, 4, 3, 4);
+            chaptersTxb.Location = new Point(10, 170);
             chaptersTxb.Name = "chaptersTxb";
-            chaptersTxb.Size = new Size(251, 20);
+            chaptersTxb.Size = new Size(220, 16);
             chaptersTxb.TabIndex = 15;
             // 
             // chaptersLbl
             // 
             chaptersLbl.AutoSize = true;
             chaptersLbl.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            chaptersLbl.Location = new Point(8, 190);
+            chaptersLbl.Location = new Point(7, 142);
             chaptersLbl.Name = "chaptersLbl";
-            chaptersLbl.Size = new Size(61, 21);
+            chaptersLbl.Size = new Size(52, 17);
             chaptersLbl.TabIndex = 14;
             chaptersLbl.Text = "Capítulos";
             // 
@@ -193,9 +148,9 @@
             // 
             sinopsisLbl.AutoSize = true;
             sinopsisLbl.Font = new Font("Bahnschrift Condensed", 10.2F, FontStyle.Regular, GraphicsUnit.Point,  0);
-            sinopsisLbl.Location = new Point(13, 279);
+            sinopsisLbl.Location = new Point(11, 209);
             sinopsisLbl.Name = "sinopsisLbl";
-            sinopsisLbl.Size = new Size(55, 21);
+            sinopsisLbl.Size = new Size(47, 17);
             sinopsisLbl.TabIndex = 17;
             sinopsisLbl.Text = "Sinopsis";
             // 
@@ -203,11 +158,10 @@
             // 
             textBox1.BackColor = Color.WhiteSmoke;
             textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(12, 309);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Location = new Point(10, 232);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(260, 344);
+            textBox1.Size = new Size(228, 258);
             textBox1.TabIndex = 17;
             // 
             // imageBtn
@@ -215,10 +169,9 @@
             imageBtn.BackColor = Color.FromArgb(  64,   64,   64);
             imageBtn.Font = new Font("Bahnschrift Condensed", 12F, FontStyle.Regular, GraphicsUnit.Point,  0);
             imageBtn.ForeColor = Color.White;
-            imageBtn.Location = new Point(11, 661);
-            imageBtn.Margin = new Padding(3, 4, 3, 4);
+            imageBtn.Location = new Point(10, 496);
             imageBtn.Name = "imageBtn";
-            imageBtn.Size = new Size(261, 52);
+            imageBtn.Size = new Size(228, 39);
             imageBtn.TabIndex = 18;
             imageBtn.Text = "Seleccionar imagen";
             imageBtn.UseVisualStyleBackColor = false;
@@ -228,29 +181,27 @@
             createBtn.BackColor = Color.LightSeaGreen;
             createBtn.Font = new Font("Bahnschrift Condensed", 12F, FontStyle.Regular, GraphicsUnit.Point,  0);
             createBtn.ForeColor = Color.White;
-            createBtn.Location = new Point(11, 721);
-            createBtn.Margin = new Padding(3, 4, 3, 4);
+            createBtn.Location = new Point(10, 541);
             createBtn.Name = "createBtn";
-            createBtn.Size = new Size(261, 52);
+            createBtn.Size = new Size(228, 39);
             createBtn.TabIndex = 19;
             createBtn.Text = "Añadir serie";
             createBtn.UseVisualStyleBackColor = false;
             // 
-            // genresPanel
+            // flowLayoutPanel1
             // 
-            genresPanel.Location = new Point(401, 184);
-            genresPanel.Margin = new Padding(3, 4, 3, 4);
-            genresPanel.Name = "genresPanel";
-            genresPanel.Size = new Size(480, 594);
-            genresPanel.TabIndex = 20;
+            flowLayoutPanel1.Location = new Point(330, 111);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(415, 424);
+            flowLayoutPanel1.TabIndex = 20;
             // 
             // CreateFilmForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(1422, 954);
-            Controls.Add(genresPanel);
+            ClientSize = new Size(796, 716);
+            Controls.Add(flowLayoutPanel1);
             Controls.Add(createBtn);
             Controls.Add(imageBtn);
             Controls.Add(textBox1);
@@ -263,12 +214,10 @@
             Controls.Add(titleLbl);
             Controls.Add(navbarPanel);
             Icon = (Icon) resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
             Name = "CreateFilmForm";
             Text = "CreateFilm";
             navbarPanel.ResumeLayout(false);
             navbarPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize) searchPbx).EndInit();
             ((System.ComponentModel.ISupportInitialize) brandPbx).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -278,9 +227,6 @@
         #endregion
 
         private System.Windows.Forms.Panel navbarPanel;
-        private System.Windows.Forms.TextBox searchTxb;
-        private System.Windows.Forms.PictureBox searchPbx;
-        private System.Windows.Forms.Panel searchPanel;
         private System.Windows.Forms.Label addLbl;
         private System.Windows.Forms.PictureBox brandPbx;
         private System.Windows.Forms.Label libraryLbl;
@@ -294,6 +240,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button imageBtn;
         private System.Windows.Forms.Button createBtn;
-        private System.Windows.Forms.Panel genresPanel;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
