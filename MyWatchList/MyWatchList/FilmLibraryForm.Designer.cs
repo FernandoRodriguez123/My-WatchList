@@ -281,6 +281,7 @@
             // 
             // libraryFlowPanel
             // 
+            libraryFlowPanel.AutoScroll = true;
             libraryFlowPanel.Location = new Point(12, 99);
             libraryFlowPanel.Name = "libraryFlowPanel";
             libraryFlowPanel.Size = new Size(782, 602);

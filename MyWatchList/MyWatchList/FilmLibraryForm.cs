@@ -183,7 +183,8 @@ namespace MyWatchList
                 Width = 150,
                 Height = 250,
                 Margin = new Padding(5),
-                Cursor = Cursors.Hand
+                Cursor = Cursors.Hand,
+                BackColor = Color.Transparent
             };
 
             var pictureBox = new PictureBox
@@ -191,7 +192,8 @@ namespace MyWatchList
                 ImageLocation = serie.ImagePath,
                 SizeMode = PictureBoxSizeMode.StretchImage,
                 Width = 150,
-                Height = 200
+                Height = 200,
+                Location = new Point(0, 0)
             };
 
             var label = new Label
@@ -200,7 +202,9 @@ namespace MyWatchList
                 AutoSize = false,
                 Width = 150,
                 Height = 40,
-                TextAlign = ContentAlignment.MiddleCenter
+                Location = new Point(0, 205),
+                TextAlign = ContentAlignment.MiddleCenter,
+                Font = new Font("Segoe UI", 9, FontStyle.Bold)
             };
 
             var toolTip = new ToolTip();
@@ -211,25 +215,16 @@ namespace MyWatchList
             panel.Controls.Add(pictureBox);
             panel.Controls.Add(label);
 
-            panel.Click += (sender, e) =>
-            {
-                var seeFilmForm = new SeeFilmForm(_service, _userId, serie.Id);
-                seeFilmForm.Show();
-            };
-
-            pictureBox.Click += (sender, e) =>
+            void ShowSerieForm()
             {
                 var seeFilmForm = new SeeFilmForm(_service, _userId, serie.Id);
                 seeFilmForm.Show();
                 this.Hide();
-            };
+            }
 
-            label.Click += (sender, e) =>
-            {
-                var seeFilmForm = new SeeFilmForm(_service, _userId, serie.Id);
-                seeFilmForm.Show();
-                this.Hide();
-            };
+            panel.Click += (sender, e) => ShowSerieForm();
+            pictureBox.Click += (sender, e) => ShowSerieForm();
+            label.Click += (sender, e) => ShowSerieForm();
 
             libraryFlowPanel.Controls.Add(panel);
         }
