@@ -1,5 +1,10 @@
 ## Avances de MyWatchList
 
+### Fechas: 13/05/2025 - 20/05/2025
+
+En este último periodo he terminado la aplicación, añadiendo los métodos necesarios al servicio CRUD de base de datos, implementando la lógica de los formularios,
+corrigiendo pequeños errores y algunos retoques visuales.
+
 ### Fechas: 06/05/2025 - 12/05/2025
 
 En este periodo he conseguido organizar el proyecto con cierta limpieza. El repositorio ya está restaurado completamente y conseguí organizar los recursos del
