@@ -6,15 +6,17 @@ namespace MyWatchList
     {
         private bool _signing = true;
         private readonly MyWatchListQueryService _service;
+
         public SignInForm(MyWatchListQueryService service)
         {
             InitializeComponent();
             _service = service;
+
+            passwordTxb.KeyDown += PasswordTxb_KeyDown;
         }
 
         private void SignInForm_Load(object sender, EventArgs e)
         {
-
         }
 
         private void ChangeSigningLbl_Click(object sender, EventArgs e)
@@ -68,6 +70,14 @@ namespace MyWatchList
 
                 var user = _service.AddUser(name, password);
                 OpenMainForm(user.Id);
+            }
+        }
+
+        private void PasswordTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SubmitBtn_Click(sender, e);
             }
         }
 
