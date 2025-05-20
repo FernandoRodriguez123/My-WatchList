@@ -17,6 +17,26 @@ namespace MyWatchList
         private readonly MyWatchListQueryService _service;
         private readonly int _userId;
 
+        private readonly Dictionary<SerieStatus, string> _statusTranslations = new()
+        {
+            { SerieStatus.Inactive, "Inactiva" },
+            { SerieStatus.Watching, "Viendo" },
+            { SerieStatus.Completed, "Completada" },
+            { SerieStatus.Rewatching, "Reviendo" },
+            { SerieStatus.Dropped, "Abandonada" },
+            { SerieStatus.PlanToWatch, "Pendiente" }
+        };
+
+        private readonly Dictionary<OrderStatus, string> _orderTranslations = new()
+        {
+            { OrderStatus.TitleAsc, "Título (A-Z)" },
+            { OrderStatus.TitleDesc, "Título (Z-A)" },
+            { OrderStatus.ScoreAsc, "Puntuación (ascendente)" },
+            { OrderStatus.ScoreDesc, "Puntuación (descendente)" },
+            { OrderStatus.EpisodesAsc, "Episodios (ascendente)" },
+            { OrderStatus.EpisodesDesc, "Episodios (descendente)" }
+        };
+
         public FilmLibraryForm(MyWatchListQueryService service, int userId)
         {
             InitializeComponent();
@@ -114,11 +134,11 @@ namespace MyWatchList
         private void PopulateStatusCheckboxes()
         {
             statusFlowPanel.Controls.Clear();
-            foreach (var status in Enum.GetValues(typeof(SerieStatus)))
+            foreach (SerieStatus status in Enum.GetValues(typeof(SerieStatus)))
             {
                 var cb = new CheckBox
                 {
-                    Text = status.ToString(),
+                    Text = _statusTranslations[status],
                     AutoSize = true,
                     Tag = status
                 };
@@ -129,11 +149,11 @@ namespace MyWatchList
         private void PopulateOrderRadios()
         {
             orderFlowPanel.Controls.Clear();
-            foreach (var order in Enum.GetValues(typeof(OrderStatus)))
+            foreach (OrderStatus order in Enum.GetValues(typeof(OrderStatus)))
             {
                 var rb = new RadioButton
                 {
-                    Text = order.ToString(),
+                    Text = _orderTranslations[order],
                     AutoSize = true,
                     Tag = order
                 };

@@ -21,6 +21,26 @@ namespace MyWatchList
         private UserSerieConfig _config;
         private PictureBox[] _stars;
 
+        private readonly SerieStatus[] _allStatuses = new[]
+        {
+            SerieStatus.Inactive,
+            SerieStatus.Watching,
+            SerieStatus.Completed,
+            SerieStatus.Rewatching,
+            SerieStatus.Dropped,
+            SerieStatus.PlanToWatch
+        };
+
+        private readonly Dictionary<SerieStatus, string> _statusTranslations = new()
+        {
+            { SerieStatus.Inactive, "Inactiva" },
+            { SerieStatus.Watching, "Viendo" },
+            { SerieStatus.Completed, "Completada" },
+            { SerieStatus.Rewatching, "Reviendo" },
+            { SerieStatus.Dropped, "Abandonada" },
+            { SerieStatus.PlanToWatch, "Pendiente" }
+        };
+
         public SeeFilmForm(MyWatchListQueryService service, int userId, int serieId)
         {
             InitializeComponent();
@@ -68,17 +88,13 @@ namespace MyWatchList
                 genresFlowPanel.Controls.Add(label);
             }
 
-            statusBtn.Text = _config.Status.ToString();
+            statusBtn.Text = _statusTranslations[_config.Status];
             statusBtn.Click += (s, e) =>
             {
-                _config.Status = _config.Status switch
-                {
-                    SerieStatus.Inactive => SerieStatus.Watching,
-                    SerieStatus.Watching => SerieStatus.Completed,
-                    SerieStatus.Completed => SerieStatus.Inactive,
-                    _ => SerieStatus.Inactive
-                };
-                statusBtn.Text = _config.Status.ToString();
+                int currentIndex = Array.IndexOf(_allStatuses, _config.Status);
+                int nextIndex = (currentIndex + 1) % _allStatuses.Length;
+                _config.Status = _allStatuses[nextIndex];
+                statusBtn.Text = _statusTranslations[_config.Status];
             };
 
             heartPbx.Image = Image.FromFile(_config.Liked ? Images.FilledRedHeart : Images.EmptyRedHeart);
